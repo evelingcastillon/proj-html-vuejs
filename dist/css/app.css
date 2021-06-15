@@ -1,14 +1,57 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400;600&display=swap);
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .container {
-  width: 750px;
+  width: 850px;
   margin: auto;
 }
 
 a {
   text-decoration: none;
+}
+
+/* Site header */
+#site_header {
+  background-color: aqua;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+#site_header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+#site_header .container nav .nav_left .btn {
+  border: none;
+  background-color: #D2401E;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 0.5rem 1rem;
+}
+#site_header .container nav .nav_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site_header .container nav .nav_center a {
+  padding: 0 0.5rem;
+}
+#site_header .container nav .nav_center a img {
+  width: 15px;
+}
+#site_header .container nav .nav_center img {
+  width: 100px;
+}
+#site_header .container nav .nav_right a:first-child {
+  padding-right: 7px;
+}
+#site_header .container nav .nav_right a:first-child img {
+  width: 18px;
 }

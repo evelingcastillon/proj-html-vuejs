@@ -1,0 +1,6 @@
+@mixin display_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+$btn_color: #D2401E;
