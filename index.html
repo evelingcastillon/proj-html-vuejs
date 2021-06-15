@@ -52,10 +52,11 @@
                 <div class="prev" @click="prev">
                     prev
                 </div>
-                <div class="slides_tastes">           
-                    <img :src="`./dist/img/h3-rev-img-${tastes[counter]}.png`" alt="">
+                <div class="slides_tastes">
+                    <img class="name" :src="`./dist/img/h3-rev-img-${nameTastes[counter]}.png`" alt="">      
+                    <img class="pizza" :src="`./dist/img/h3-rev-img-${tastes[counter]}.png`" alt="">                 
                 </div>
-                <div class="next">
+                <div class="next" @click="next">
                     next
                 </div>
             </section>

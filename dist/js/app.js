@@ -17,10 +17,17 @@ var app = new Vue({
   methods: {
     prev: function prev() {
       if (this.counter === 0) {
-        return this.counter = this.tastes.length - 1;
+        return this.counter = 2;
       }
 
       return this.counter -= 1;
+    },
+    next: function next() {
+      if (this.counter === 2) {
+        return this.counter = 0;
+      }
+
+      return this.counter += 1;
     }
   }
 });
