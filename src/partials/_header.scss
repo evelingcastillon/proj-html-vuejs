@@ -37,5 +37,13 @@
                 }
             }
         }
+
+    }
+    .section_header {
+        @include display_flex;
+        padding: 3rem 0;
+        img {
+            width: 150px;
+        }
     }
 }

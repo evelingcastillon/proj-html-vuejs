@@ -55,3 +55,12 @@ a {
 #site_header .container nav .nav_right a:first-child img {
   width: 18px;
 }
+#site_header .section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+#site_header .section_header img {
+  width: 150px;
+}
