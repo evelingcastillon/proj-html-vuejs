@@ -1,7 +1,11 @@
-@mixin display_flex {
+@mixin display_flex_jc_sb {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@mixin display_flex_all_center {
+    display: flex;
+    
 }
 @mixin absolute_center {
     position: absolute;

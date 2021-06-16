@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400;600&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
 * {
   box-sizing: border-box;
   padding: 0;
@@ -182,8 +183,11 @@ a {
   justify-content: center;
   width: 35%;
   color: #303030;
-  line-height: 30px;
+  line-height: 25px;
   padding-left: 8rem;
+}
+#site_main .specials .text_specials h2 {
+  padding-bottom: 1rem;
 }
 #site_main .specials .text_specials p {
   font-size: 15px;
@@ -195,4 +199,66 @@ a {
 #site_main .specials .text_specials .prices_specials .price {
   padding-right: 0.5rem;
   color: #C83B1A;
+}
+#site_main .mision img {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+#site_main .team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site_main .team .singular_team {
+  position: relative;
+  width: calc(100% / 4);
+}
+#site_main .team .singular_team img {
+  width: 100%;
+}
+#site_main .team .singular_team .margin_square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+#site_main .team .singular_team .margin_square .square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #C83B1A;
+  width: 90%;
+  height: 90%;
+}
+#site_main .team .singular_team .margin_square .square .text_team {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#site_main .team .singular_team .margin_square .square .text_team h4 {
+  text-align: center;
+}
+#site_main .team .singular_team .margin_square .square .text_team p {
+  font-family: "Open Sans", sans-serif;
+  font-size: small;
+  text-align: center;
+}
+#site_main .team .singular_team .margin_square .square .text_team .team_social {
+  display: flex;
+  justify-content: center;
+}
+#site_main .team .singular_team .margin_square .square .text_team .team_social a i {
+  padding: 0.3rem 0.2rem;
+  color: #FFFFFF;
+}
+#site_main .team .singular_team:hover .margin_square {
+  opacity: 1;
 }
