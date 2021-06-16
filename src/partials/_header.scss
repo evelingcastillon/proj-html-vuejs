@@ -1,90 +1,103 @@
 /* Site header */
 #site_header {
-    background-color: #1B1B1B;
     font-size: 11px;
     letter-spacing: 1.5px;
-    .container {
-        nav {
-            @include display_flex;
-            padding: 1rem 0;
-            .nav_left {
-                .btn {
-                    color: $color_text_nav;
-                    border: none;
-                    background-color: $btn_color;
-                    font-size: 11px;
-                    letter-spacing: 1.5px;
-                    padding: 0.5rem 1rem;
-                }
-                button:hover {
-                    cursor: pointer;
-                    box-shadow: inset 0 0 0 5px #AB4027;
-                  }
-            }
-            .nav_center{
+    
+    .first_header {
+        background-color: #1B1B1B;
+
+        .container {
+            nav {
                 @include display_flex;
-                a {
-                    color: $color_text_nav;
-
-                    padding: 0 0.5rem;
-                    img {
-                        filter: invert(100%);
-                        width: 15px;
+                padding: 1rem 0;
+                .nav_left {
+                    .btn {
+                        color: $color_text_nav;
+                        border: none;
+                        background-color: $btn_color;
+                        font-size: 11px;
+                        letter-spacing: 1.5px;
+                        padding: 0.5rem 1rem;
+                    }
+                    button:hover {
+                        cursor: pointer;
+                        box-shadow: inset 0 0 0 5px #AB4027;
                     }
                 }
-                img {
-                    width: 100px;
-                }
-            }
-            .nav_right {
-                a{
-                    color: $color_text_nav;
-
-                }
-                a:first-child {
-                    padding-right: 7px;
+                .nav_center{
+                    @include display_flex;
+                    a {
+                        color: $color_text_nav;
+                        
+                        padding: 0 0.5rem;
+                        img {
+                            filter: invert(100%);
+                            width: 15px;
+                        }
+                    }
                     img {
-                        width: 18px;
-                        filter: invert(100%);
+                        width: 100px;
+                    }
+                }
+                .nav_right {
+                    a{
+                        color: $color_text_nav;
+                        
+                    }
+                    a:first-child {
+                        padding-right: 7px;
+                        img {
+                            width: 18px;
+                            filter: invert(100%);
+                        }
                     }
                 }
             }
+            
         }
-
-    }
-    .section_header {
-        @include display_flex;
-        padding: 3rem 0;
-        height: 50vh;
-        .prev {
-            cursor: pointer;
-            background-color: $bg_text_slides;
-            color: $color_text_slides;
-            font-size: 14px;
-            transform: rotate(90deg);
-        }
-        .slides_tastes{
-            position: relative;
-            .name {
-                width: 580px;
-                filter: invert(10%);
+        .section_header {
+            @include display_flex;
+            padding: 3rem 0;
+            height: 50vh;
+            .prev {
+                cursor: pointer;
+                background-color: $bg_text_slides;
+                color: $color_text_slides;
+                font-size: 14px;
+                transform: rotate(90deg);
+            }
+            .slides_tastes{
                 position: relative;
+                .name {
+                    width: 580px;
+                    filter: invert(10%);
+                    position: relative;
+                }
+                .pizza {
+                    width: 200px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
-            .pizza {
-                width: 200px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            .next {
+                cursor: pointer;
+                background-color: $bg_text_slides;
+                color: $color_text_slides;
+                font-size: 14px;
+                transform: rotate(270deg);
+                
             }
         }
-        .next {
-            cursor: pointer;
-            background-color: $bg_text_slides;
-            color: $color_text_slides;
-            font-size: 14px;
-            transform: rotate(270deg);
-
+    }
+    .second_header {
+        .info_photos {
+            @include display_flex;
+            padding: 6px  0;
+            img {
+                width: calc(100% / 4.05);
+            }
         }
     }
 }

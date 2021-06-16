@@ -10,57 +10,82 @@
 </head>
 <body>
     <div id="app">
-
+        <!-- Site header -->
         <header id="site_header">
-    
-            <div class="container">
-                
+            
+            <!-- first header -->
+
+            <div class="first_header">
+
                 <!-- nav -->
-                <nav class="navbar">
-                    <!-- nav left -->
-                    <div class="nav_left">
-                        <button class="btn">ORDER ONLINE</button>
+                <div class="container">
+                    
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <!-- nav left -->
+                        <div class="nav_left">
+                            <button class="btn">ORDER ONLINE</button>
+                        </div>
+                        
+                        <!-- nav center -->
+                        <div class="nav_center">
+                            <a href="#">
+                                <img src="./dist/svg/svg-0.svg" alt="">
+                                HOME
+                            </a>
+                            <a href="#">PAGES</a>
+                            <a href="#">MENU</a>
+                            <img src="./dist/img/h5-logo-divided-header.png" alt="">
+                            <a href="#">EVENT</a>
+                            <a href="#">BLOG</a>
+                            <a href="#">LANDING</a>
+                        </div>
+                        
+                        <!-- nav rigth -->
+                        <div class="nav_right">
+                            <a href="#">
+                                <img src="./dist/svg/svg-1.svg" alt="moto">
+                                CART
+                            </a>
+                            <a href="#">SEARCH</a>
+                        </div>
+                    </nav>
+                    
+                </div>
+                <!-- /nav -->
+                
+                <!-- Tastes -->
+                <section class="section_header">
+                    <div class="prev" @click="prev">
+                        prev
                     </div>
-    
-                    <!-- nav center -->
-                    <div class="nav_center">
-                        <a href="#">
-                            <img src="./dist/svg/svg-0.svg" alt="">
-                            HOME
-                        </a>
-                        <a href="#">PAGES</a>
-                        <a href="#">MENU</a>
-                        <img src="./dist/img/h5-logo-divided-header.png" alt="">
-                        <a href="#">EVENT</a>
-                        <a href="#">BLOG</a>
-                        <a href="#">LANDING</a>
+                    <div class="slides_tastes">
+                        <img class="name" :src="`./dist/img/h3-rev-img-${nameTastes[counter]}.png`" alt="">      
+                        <img class="pizza" :src="`./dist/img/h3-rev-img-${tastes[counter]}.png`" alt="">                 
                     </div>
-    
-                    <!-- nav rigth -->
-                    <div class="nav_right">
-                        <a href="#">
-                            <img src="./dist/svg/svg-1.svg" alt="moto">
-                            CART
-                        </a>
-                        <a href="#">SEARCH</a>
+                    <div class="next" @click="next">
+                        next
                     </div>
-                </nav>
-    
+                </section>
+                <!-- /TasteS -->
             </div>
-            <!-- Tastes -->
-            <section class="section_header">
-                <div class="prev" @click="prev">
-                    prev
-                </div>
-                <div class="slides_tastes">
-                    <img class="name" :src="`./dist/img/h3-rev-img-${nameTastes[counter]}.png`" alt="">      
-                    <img class="pizza" :src="`./dist/img/h3-rev-img-${tastes[counter]}.png`" alt="">                 
-                </div>
-                <div class="next" @click="next">
-                    next
-                </div>
-            </section>
+            
+            <div class="second_header">
+                
+                <section class="info_photos">
+                    <img src="./dist/img/h3-img-1.jpg" alt="">
+                    <img src="./dist/img/h3-img-2.jpg" alt="">
+                    <img src="./dist/img/h3-img-3.jpg" alt="">
+                    <img src="./dist/img/h3-img-4.jpg" alt="">
+                </section>
+            </div>
         </header>
+
+        <!-- Site main -->
+        <main id="site_main">
+            
+        </main>
+        <!-- /Sitem main -->
     </div>
     <!-- Vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
