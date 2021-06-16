@@ -11,7 +11,8 @@ let app = new Vue({
             '1',
             '3',
             '5'
-        ]
+        ],
+        mision: ' "FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"'
     },
     methods: {
         prev() {

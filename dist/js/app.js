@@ -12,7 +12,8 @@ var app = new Vue({
   data: {
     counter: 0,
     tastes: ['2', '4', '6'],
-    nameTastes: ['1', '3', '5']
+    nameTastes: ['1', '3', '5'],
+    mision: ' "FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"'
   },
   methods: {
     prev: function prev() {

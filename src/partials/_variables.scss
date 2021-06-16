@@ -3,7 +3,15 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin absolute_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 $btn_color: #D2401E;
 $color_text_nav : #FFFFFF;
 $color_text_slides: #C83B1A;
 $bg_text_slides: #F7F7F2;
+$bg_lighgray: #D9D9D9;
+$text_gray: #303030;

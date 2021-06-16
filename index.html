@@ -67,13 +67,13 @@
                         next
                     </div>
                 </section>
-                <!-- /TasteS -->
+                <!-- /Tastes -->
             </div>
             
             <div class="second_header">
                 
                 <section class="info_photos">
-                    <img src="./dist/img/h3-img-1.jpg" alt="">
+                    <img src="./dist/img/h3-img-1.jpg" alt="new place">
                     <img src="./dist/img/h3-img-2.jpg" alt="">
                     <img src="./dist/img/h3-img-3.jpg" alt="">
                     <img src="./dist/img/h3-img-4.jpg" alt="">
@@ -83,7 +83,61 @@
 
         <!-- Site main -->
         <main id="site_main">
-            
+            <section class="testimonials">
+                <div class="prev" @click="prev">
+                    prev
+                </div>
+                <img src="./dist/img/h3-testimonials-bckgrnd.jpg" alt="">
+                <div class="testimonials_text">
+                    <h1>"</h1>
+                    <h4>{{mision}}</h4>
+                    <h6>WASHINGTON POST 2018</h6>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+                <div class="next" @click="next">
+                    next
+                </div>
+            </section>
+
+            <section class="specials">
+                <div class="bg_image">
+                    <img src="./dist/img/h1-img-4.jpg" alt="">
+                    <div class="text_image">
+                        <img src="./dist/img/h1-img-7n.png" alt="">
+                    </div>
+                </div>
+                <div class="text_specials">
+                    <h1>SPECIALS*</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias odit nisi quos sequi nobis distinctio architecto, magni necessitatibus.</p>
+                    <div class="prices_specials">
+                        <h3 class="price">$10</h3>
+                        <div class="description">
+                            <h3>COMBO PICCOLO</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit elit officiis, lorem, ipsum ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+                    <div class="prices_specials">
+                        
+                        <h3 class="price">$20</h3>
+                        <div class="description">
+                            <h3>COMBO MEZZO</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing lorem, ipsum dolor elit officiis, Lorem ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+                    <div class="prices_specials">
+
+                        <h3 class="price">$30</h3>
+                        <div class="description">
+                            <h3>COMBO GRANDE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit officiis, Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- /Sitem main -->
     </div>
