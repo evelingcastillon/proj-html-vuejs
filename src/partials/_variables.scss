@@ -3,10 +3,6 @@
     justify-content: space-between;
     align-items: center;
 }
-@mixin display_flex_all_center {
-    display: flex;
-    
-}
 @mixin absolute_center {
     position: absolute;
     top: 50%;
@@ -19,3 +15,4 @@ $color_text_slides: #C83B1A;
 $bg_text_slides: #F7F7F2;
 $bg_lighgray: #D9D9D9;
 $text_gray: #303030;
+$bg_secondary: #B7903C;
