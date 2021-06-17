@@ -151,7 +151,7 @@
             <!-- /Mision -->
             
             <!-- Team -->
-            <div class="team">
+            <section class="team">
                 <div class="singular_team">
                     <img src="./dist/img/h1-team-1a-700x700.jpg" alt="">
                     <div class="margin_square">
@@ -219,21 +219,40 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- /Team -->
             
             <!-- Sponsor -->
-            <div class="sponsor">
+            <section class="sponsor">
                 <img src="./dist/img/h1-clients-img-4.png" alt="">
                 <img src="./dist/img/h1-clients-img-3.png" alt="">
                 <img src="./dist/img/h1-clients-img-1.png" alt="">
                 <img src="./dist/img/h1-clients-img-2.png" alt="">
                 <img src="./dist/img/h1-clients-img-5.png" alt="">
-                </div>
+            </section>
             <!-- /Sponsor -->
-            
+
+
+            <!-- Pizzas -->
+            <section class="pizzas">
+                <div class="title_pizzas">
+                    <h6>CHOOSE YOUR FLAVOR</h6>
+                    <h1>THE BEST PIZZA MENU IN TOWN</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur rum est, facilis incidunt sequi quam maiores debitis iure ipsam itaque assumenda doloribus amet dolorum tenetur sed atque velit.</p>
+                </div>
+                <div class="menu_pizza">
+                    <div class="pizza"  v-for="pizza in pizzas">
+                        <img :src="`./dist/img/${pizza.imgPizza}`" alt="">
+                        <h6 class="name_pizza">{{pizza.namePizza}}</h6>
+                        <h6 class="price_pizza">{{pizza.pricePizza}}</h6>
+                        <div class="sold">SOLD</div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Pizza -->
+
             <!-- Events -->
-            <div class="events">
+            <section class="events">
                 <div class="text_events">
                     <p>MADE WITH LOVE</p>
                     <h1>DELISH PIZZA DEALS</h1>
@@ -278,7 +297,7 @@
                     <img src="./dist/img/h3-img-5a.jpg" alt="">
                 </div>
 
-            </div>
+            </section>
             <!-- /Events -->
 
             <!-- Order -->

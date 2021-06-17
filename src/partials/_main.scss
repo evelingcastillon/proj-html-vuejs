@@ -140,6 +140,62 @@
             opacity: 1;
         }
     }
+    .sponsor {
+        display: flex;
+        justify-content: center;
+        img {
+            margin: 3rem 0;
+            width: 200px;
+            height: 100px;
+        }
+
+    }
+    .pizzas {
+        .title_pizzas {
+            text-align: center;
+            padding: 2rem 25rem;
+            h6 {
+                color: $color_text_slides;
+            }
+            p{
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+        .menu_pizza {
+            @include display_flex_jc_sb;
+            padding: 4rem 0;
+            .pizza {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                img {
+                    width: 170px;
+                    height: 170px;
+                }
+                .name_pizza {
+                    color: $text_secondary;
+                    padding: 0.5rem 0 0.3rem;
+                }
+                .price_pizza {
+                    color: $color_text_slides;
+                }
+                .sold {
+                    background-color: $btn_color;
+                    color: $color_text_nav;
+                    font-size: x-small;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 12px;
+                    right: 10px;
+                }
+            }
+        }
+    }
     .events {
         color: $color_text_nav;
         display: flex;
