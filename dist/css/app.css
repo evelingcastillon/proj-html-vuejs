@@ -267,12 +267,12 @@ a {
   display: flex;
 }
 #site_main .events .text_events {
-  padding-left: 8rem;
-  background-color: #303030;
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 8rem;
+  background-color: #303030;
+  width: 50%;
 }
 #site_main .events .text_events p {
   font-size: x-small;
@@ -373,4 +373,81 @@ a {
 #site_main .order .data_client button:hover {
   cursor: pointer;
   box-shadow: inset 0 0 0 5px #AB4027;
+}
+
+/* Site footer */
+#site_footer {
+  display: flex;
+  height: 90vh;
+}
+#site_footer .text_footer {
+  padding: 5rem 0 0 5rem;
+  width: 50%;
+  background-color: #1B1B1B;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#site_footer .text_footer .address {
+  width: calc(100% / 3);
+}
+#site_footer .text_footer .address h4 {
+  color: #B68A2C;
+}
+#site_footer .text_footer .address .singular_address p {
+  line-height: 22px;
+  padding: 0.8rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #858585;
+}
+#site_footer .text_footer .timetables {
+  width: calc(100% / 3);
+}
+#site_footer .text_footer .timetables h4 {
+  color: #B68A2C;
+}
+#site_footer .text_footer .timetables .day {
+  padding: 0.4rem 0;
+}
+#site_footer .text_footer .timetables .day h5 {
+  color: #B68A2C;
+}
+#site_footer .text_footer .timetables .day p {
+  padding: 0.5rem 0;
+  color: #858585;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+#site_footer .text_footer .timetables .follow {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+#site_footer .text_footer .timetables .follow h5 {
+  color: #B68A2C;
+}
+#site_footer .text_footer .timetables .follow .icons_social i {
+  padding: 0 0.4rem;
+  color: #FFFFFF;
+}
+#site_footer .text_footer .mision {
+  width: calc(100% / 3);
+}
+#site_footer .text_footer .mision h3 {
+  width: 70%;
+  color: #FFFFFF;
+  padding-top: 6rem;
+  line-height: 35px;
+}
+#site_footer .text_footer .credits d .text_credits {
+  text-align: left;
+}
+#site_footer .bg_footer {
+  width: 50%;
+}
+#site_footer .bg_footer img {
+  width: 100%;
+  height: 100%;
 }
