@@ -6,6 +6,7 @@
     .first_header {
         background-color: #1B1B1B;
 
+        //nav
         .container {
             nav {
                 @include display_flex_jc_sb;
@@ -55,16 +56,37 @@
             }
             
         }
+
+        //section header
         .section_header {
             @include display_flex_jc_sb;
             padding: 3rem 0;
             height: 50vh;
+
+            
             .prev {
                 cursor: pointer;
-                background-color: $bg_text_slides;
                 color: $color_text_slides;
                 font-size: 14px;
-                transform: rotate(90deg);
+                position: relative;
+                
+                .circle {
+                    padding: 2rem;
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                    background-color: $bg_text_slides;
+                    border-radius: 80%;
+                    .text_circle {
+                        position: absolute;
+                        right: 5px;
+                        top: 22px;
+                        transform: rotate(90deg);
+
+                    }
+                }
+
+                
             }
             .slides_tastes{
                 position: relative;
@@ -83,8 +105,22 @@
                 background-color: $bg_text_slides;
                 color: $color_text_slides;
                 font-size: 14px;
-                transform: rotate(270deg);
-                
+                position: relative;
+                .circle {
+                    padding: 2rem;
+                    position: absolute;
+                    top: 0;
+                    right: -30px;
+                    background-color: $bg_text_slides;
+                    border-radius: 80%;
+                    .text_circle {
+                        transform: rotate(270deg);
+                        position: absolute;
+                        left: 5px;
+                        top: 22px;
+
+                    }
+                }
             }
         }
     }

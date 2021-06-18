@@ -57,14 +57,24 @@
                 <!-- Tastes -->
                 <section class="section_header">
                     <div class="prev" @click="prev">
-                        prev
+                        <div class="circle">
+                            <div class="text_circle">
+                                prev
+                            </div>
+
+                        </div>
                     </div>
                     <div class="slides_tastes">
                         <img class="name" :src="`./dist/img/h3-rev-img-${nameTastes[counter]}.png`" alt="">      
                         <img class="pizza" :src="`./dist/img/h3-rev-img-${tastes[counter]}.png`" alt="">                 
                     </div>
                     <div class="next" @click="next">
-                        next
+                        <div class="circle">
+                            <div class="text_circle">
+                                next
+                            </div>
+
+                        </div>
                     </div>
                 </section>
                 <!-- /Tastes -->
@@ -123,8 +133,13 @@
 
             <!-- Testimonials -->
             <section class="testimonials">
-                <div class="prev" @click="prev">
-                    prev
+                <div class="prev">
+                    <div class="circle">
+                        <div class="text_circle">
+                            prev
+                        </div>
+
+                    </div>
                 </div>
                 <img src="./dist/img/h3-testimonials-bckgrnd.jpg" alt="">
                 <div class="testimonials_text">
@@ -137,8 +152,13 @@
                         <div class="point"></div>
                     </div>
                 </div>
-                <div class="next" @click="next">
-                    next
+                <div class="next">
+                    <div class="circle">
+                        <div class="text_circle">
+                            next
+                        </div>
+
+                    </div>
                 </div>
             </section>
             <!-- /Testimonials -->
@@ -283,12 +303,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur rum est, facilis incidunt sequi quam maiores debitis iure ipsam itaque assumenda doloribus amet dolorum tenetur sed atque velit.</p>
                 </div>
                 <div class="menu_pizza">
-                    <div class="pizza"  v-for="pizza in pizzas">
+                    <a class="pizza"  v-for="pizza in pizzas">
                         <img :src="`./dist/img/${pizza.imgPizza}`" alt="">
                         <h6 class="name_pizza">{{pizza.namePizza}}</h6>
                         <h6 class="price_pizza">{{pizza.pricePizza}}</h6>
                         <div class="sold">SOLD</div>
-                    </div>
+                    </a>
                 </div>
             </section>
             <!-- /Pizza -->

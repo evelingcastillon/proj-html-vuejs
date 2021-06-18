@@ -5,13 +5,42 @@
         img {
             width: 100%;
         }
-        .prev {
+        /* .prev {
             position: absolute;
             top: 50%;
             left: 0;
             font-size: 14px;
             transform: rotate(90deg);
+        } */
+
+        .prev {
+            cursor: pointer;
+            color: $color_text_slides;
+            font-size: 14px;
+            position: absolute;
+            top: 40%;
+            left: 0;
+            
+            .circle {
+                padding: 2rem;
+                position: absolute;
+                top: 0;
+                left: -30px;
+                background-color: white;
+                border-radius: 80%;
+
+                .text_circle {
+                    position: absolute;
+                    right: 5px;
+                    top: 22px;
+                    transform: rotate(90deg);
+
+                }
+            }
+
+            
         }
+
         .testimonials_text {
             width: 600px;
             text-align: center;
@@ -34,12 +63,32 @@
                 }
             }
         }
+        /* .next {
+            font-size: 14px;
+        } */
         .next {
             position: absolute;
             top: 50%;
             right: 0;
+            cursor: pointer;
+            background-color: $bg_text_slides;
+            color: $color_text_slides;
             font-size: 14px;
-            transform: rotate(270deg);
+            .circle {
+                padding: 2rem;
+                position: absolute;
+                top: 0;
+                right: -30px;
+                background-color: white;
+                border-radius: 80%;
+                .text_circle {
+                    transform: rotate(270deg);
+                    position: absolute;
+                    left: 5px;
+                    top: 22px;
+
+                }
+            }
         }
     }
     .specials {
@@ -181,6 +230,7 @@
             @include display_flex_jc_sb;
             padding: 4rem 0;
             .pizza {
+                cursor: pointer;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -208,7 +258,12 @@
                     position: absolute;
                     top: 12px;
                     right: 10px;
+                    opacity: 0;
+                    transition: .5s ease;
                 }
+            }
+            .pizza:hover .sold {
+                opacity: 1;
             }
         }
     }

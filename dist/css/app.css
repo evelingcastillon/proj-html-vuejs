@@ -17,6 +17,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Site header */
 #site_header {
   font-size: 11px;
@@ -78,9 +83,22 @@ a {
 }
 #site_header .first_header .section_header .prev {
   cursor: pointer;
-  background-color: #F7F7F2;
   color: #C83B1A;
   font-size: 14px;
+  position: relative;
+}
+#site_header .first_header .section_header .prev .circle {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  background-color: #F7F7F2;
+  border-radius: 80%;
+}
+#site_header .first_header .section_header .prev .circle .text_circle {
+  position: absolute;
+  right: 5px;
+  top: 22px;
   transform: rotate(90deg);
 }
 #site_header .first_header .section_header .slides_tastes {
@@ -103,7 +121,21 @@ a {
   background-color: #F7F7F2;
   color: #C83B1A;
   font-size: 14px;
+  position: relative;
+}
+#site_header .first_header .section_header .next .circle {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  background-color: #F7F7F2;
+  border-radius: 80%;
+}
+#site_header .first_header .section_header .next .circle .text_circle {
   transform: rotate(270deg);
+  position: absolute;
+  left: 5px;
+  top: 22px;
 }
 #site_header .second_header .info_photos {
   display: flex;
@@ -154,15 +186,40 @@ a {
 /* Site main */
 #site_main .testimonials {
   position: relative;
+  /* .prev {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: 14px;
+      transform: rotate(90deg);
+  } */
+  /* .next {
+      font-size: 14px;
+  } */
 }
 #site_main .testimonials img {
   width: 100%;
 }
 #site_main .testimonials .prev {
-  position: absolute;
-  top: 50%;
-  left: 0;
+  cursor: pointer;
+  color: #C83B1A;
   font-size: 14px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+#site_main .testimonials .prev .circle {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  background-color: white;
+  border-radius: 80%;
+}
+#site_main .testimonials .prev .circle .text_circle {
+  position: absolute;
+  right: 5px;
+  top: 22px;
   transform: rotate(90deg);
 }
 #site_main .testimonials .testimonials_text {
@@ -193,8 +250,24 @@ a {
   position: absolute;
   top: 50%;
   right: 0;
+  cursor: pointer;
+  background-color: #F7F7F2;
+  color: #C83B1A;
   font-size: 14px;
+}
+#site_main .testimonials .next .circle {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  background-color: white;
+  border-radius: 80%;
+}
+#site_main .testimonials .next .circle .text_circle {
   transform: rotate(270deg);
+  position: absolute;
+  left: 5px;
+  top: 22px;
 }
 #site_main .specials {
   display: flex;
@@ -345,6 +418,7 @@ a {
   padding: 4rem 0;
 }
 #site_main .pizzas .menu_pizza .pizza {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,6 +447,11 @@ a {
   position: absolute;
   top: 12px;
   right: 10px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+#site_main .pizzas .menu_pizza .pizza:hover .sold {
+  opacity: 1;
 }
 #site_main .events {
   color: #FFFFFF;
