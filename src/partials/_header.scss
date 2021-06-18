@@ -92,8 +92,42 @@
         .info_photos {
             @include display_flex_jc_sb;
             padding: 6px  0;
-            img {
+            .singular_photo {
+                position: relative;
                 width: calc(100% / 4.05);
+
+                img {
+                    width: 100%;
+                }
+
+                .box_photo {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    opacity: 0;
+                    transition: .5s ease;
+                    .square_photo {
+                        background-color: $color_text_slides;
+                        width: 20%;
+                        height: 30%;
+                        border-radius: 50%;
+                        @include absolute_center;
+
+                        i {
+                            color: white;
+                            @include absolute_center;
+
+                            font-size: large;
+                        }
+                    }
+                }
+            }
+            .singular_photo:hover .box_photo {
+                opacity: 1;
+                cursor: pointer;
             }
         }
     }

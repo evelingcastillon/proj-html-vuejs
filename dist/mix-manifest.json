@@ -1,6 +1,5 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
     "/img/footer-img-1.jpg": "/img/footer-img-1.jpg",
     "/img/h1-clients-img-1.png": "/img/h1-clients-img-1.png",
     "/img/h1-clients-img-2.png": "/img/h1-clients-img-2.png",
@@ -48,5 +47,6 @@
     "/svg/svg-6.svg": "/svg/svg-6.svg",
     "/svg/svg-7.svg": "/svg/svg-7.svg",
     "/svg/svg-8.svg": "/svg/svg-8.svg",
-    "/svg/svg-9.svg": "/svg/svg-9.svg"
+    "/svg/svg-9.svg": "/svg/svg-9.svg",
+    "/css/app.css": "/css/app.css"
 }
