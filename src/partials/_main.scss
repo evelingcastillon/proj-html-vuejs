@@ -167,8 +167,14 @@
             h6 {
                 color: $color_text_slides;
             }
+            h1 {
+                color: $text_gray;
+                font-size: 30px;
+                padding: 1.5rem 0;
+            }
             p{
                 font-family: 'Open Sans', sans-serif;
+                width: 100%;
             }
         }
         .menu_pizza {

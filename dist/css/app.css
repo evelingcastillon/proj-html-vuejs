@@ -329,8 +329,14 @@ a {
 #site_main .pizzas .title_pizzas h6 {
   color: #C83B1A;
 }
+#site_main .pizzas .title_pizzas h1 {
+  color: #303030;
+  font-size: 30px;
+  padding: 1.5rem 0;
+}
 #site_main .pizzas .title_pizzas p {
   font-family: "Open Sans", sans-serif;
+  width: 100%;
 }
 #site_main .pizzas .menu_pizza {
   display: flex;
