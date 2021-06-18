@@ -155,7 +155,7 @@
 
             <!-- Testimonials -->
             <section class="testimonials">
-                <div class="prev">
+                <div class="prev" @click='prev'>
                     <div class="circle">
                         <div class="text_circle">
                             prev
@@ -166,7 +166,7 @@
                 <img src="./dist/img/h3-testimonials-bckgrnd.jpg" alt="">
                 <div class="testimonials_text">
                     <h1>"</h1>
-                    <h4>{{mision}}</h4>
+                    <h4>{{testimonials[counter].text}}</h4>
                     <h6>WASHINGTON POST 2018</h6>
                     <div class="points">
                         <div class="point"></div>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
                 <div class="next">
-                    <div class="circle">
+                    <div class="circle" @click="next">
                         <div class="text_circle">
                             next
                         </div>

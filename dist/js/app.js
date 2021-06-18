@@ -38,6 +38,11 @@ var app = new Vue({
       imgPizza: 'h3-product-img-6a-100x100.png',
       namePizza: 'CAMPAGNOLA',
       pricePizza: '$50,00 - $95,00'
+    }],
+    testimonials: [{
+      text: '"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES" '
+    }, {
+      text: '"Really good. I would like to personally thank you for your outstanding product"'
     }]
   },
   methods: {
