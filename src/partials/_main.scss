@@ -65,20 +65,22 @@
         }
         /* .next {
             font-size: 14px;
+            transform: rotate(270deg);
         } */
         .next {
-            position: absolute;
-            top: 50%;
-            right: 0;
             cursor: pointer;
             background-color: $bg_text_slides;
             color: $color_text_slides;
             font-size: 14px;
+            position: absolute;
+            
+            right: 0;
+            top: 40%;
             .circle {
                 padding: 2rem;
                 position: absolute;
                 top: 0;
-                right: -30px;
+                right: -25px;
                 background-color: white;
                 border-radius: 80%;
                 .text_circle {

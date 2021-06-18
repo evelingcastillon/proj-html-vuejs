@@ -71,9 +71,14 @@
             }
         }
         .credits {
-            d
             .text_credits {
+                font-family: 'Open Sans', sans-serif;
+                color: $text_secondary;
                 text-align: left;
+                span {
+                    color: $text_credit;
+                font-family: 'Open Sans', sans-serif;
+                }
             }
         }
     }
