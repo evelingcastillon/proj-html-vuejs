@@ -47,6 +47,24 @@ body {
   background-color: #EE2852;
 }
 
+.menu_dropbox {
+  position: fixed;
+  top: 90%;
+  right: 25px;
+  z-index: 1;
+}
+.menu_dropbox .second_icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #F6F7F2;
+}
+.menu_dropbox .second_icon img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Site header */
 #site_header {
   font-size: 11px;
